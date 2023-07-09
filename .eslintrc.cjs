@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2020: true, node: true },
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -46,8 +46,5 @@ module.exports = {
         project: path.resolve(__dirname, './tsconfig.json'),
       },
     },
-  },
-  env: {
-    node: true,
   },
 };
